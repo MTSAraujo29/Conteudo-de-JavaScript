@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores do JS</title>
+    <style>
+        body {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Operadores</h1>
+    <script>
+        //Operados no JS são:
+        //-Aritmedicos
+        //-Atribuição
+        //-Relacionais
+        //-Logiicos
+        //-Ternário
+        /*
+        No Aritmedico usamos dos formas de fazer calculo
+        +  = Soma
+        -  = Subitação
+        *  = Multiplicação
+        /  = Divisão
+        %  = Divisão inteira
+        ** = Ao quadrado
+
+         Operadores de Atribuição:
+         -var
+
+         Operadores Relacionais
+        Sempre o resultado dos relacionairs vai ser um valor boleano ou seja 
+        True verdadeiro ou false falso.
+        são eles:
+        > Maior
+        < Menor
+        >= Maior ou Igual
+        <= Menor ou Igual
+        == igual
+        != diferente
+
+        Operadores Logicos
+        No js são 3 :
+        ! quer dizer, negação (não)
+        || quer dizer disjunção (ou)
+
+        Operador Ternário
+        Possue 2 valore em uma só linha 
+        TESTE ? TRUE : FALSE
+
+        Precendeicia
+        onde de fazer os calculo sempre vai ser 
+        Aritimedico
+        relacionais nao tem onde de precendecia quem apracer primeiro faz
+        Logicos
+        */
+
+        var idade = window.prompt('Coloque seu idade, pra saber se você pode tirar sua CNH')
+        var CNH = idade >= 18 ? 'poder' : 'nao poder'
+        window.alert(`Voce ${CNH} começar o precesso de CNH`)
+    </script>
+</body>
+
+</html>
