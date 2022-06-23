@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt arial;
+            background-color: rgb(59, 214, 59);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Eventos e tudo aquilo que pode aconter
+    com um elemeto especifico.
+    Como por exemplo o evento causado pelo o mouse
+    que pode ocorrer 6 eventos especificos que são:
+    -Mouseenter = quando o mouse entra dentro do elemento
+    -Mousemove = quando o mouse mexer dentro do  elemento
+    -Mousedown = quando o mouse e apertado dentro do elemento e segurado
+    -Mouseup = quando o mouse e soltado dentro do elemento depois de ser segurado 
+    -Click = quando o mouse e apertado rapido dentro do elemento
+    -Mouseout = quando o mouse sair do elemento
+
+    Mais pra poder fazer um evento e necessario saber o que Função
+    Função seria um conjunto de codigos que seram executadas somente
+    quando um evento ocorrer, Exemplo programei 10 linha de codigo
+    e essa linha e chamada de BLOCO esse bloco nao vao ser executado
+    automaticamente quando entra na pagina, mas sim quando for asionado
+    o evento ai com isso e executado o BLOCO.
+    No JS o BLOCO ficam dentro de {}, e esse BLOCO temos que nomear
+    ele com um FUNCTION e a function temos que da um nome 
+    por exemplo assim function ação() depois do nome colocar 
+    ()  
+    -->
+    <h1>Eventos dom</h1>
+
+    <div id="area">
+        <strong>Interaja...</strong>
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'clicou!'
+            a.style.background = 'blue'
+            a.style.color = 'black'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu!'
+        }
+    </script>
+</body>
+
+</html>

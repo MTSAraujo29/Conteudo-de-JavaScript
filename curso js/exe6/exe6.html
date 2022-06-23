@@ -29,10 +29,23 @@
     <h1> DOM (Document Object Model)</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
-    <div>
+    <div id="msg">
         Clcik em mim
     </div>
     <script>
+        //Para poder acessaro metado DOM
+        //Eitir 5 modos
+        //Por Marca usando o comando getElementsByTagName()
+        //Por ID usando o comando getElementById()
+        //Por Nome usando o comando getElementsByName()
+        //Por Classe usando o comando getElementsByClassName()
+        //Por Seletor 
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('No primeiro paragrafo esta escrito assim: ' +
+            p1.innerHTML)
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando..'
     </script>
 </body>
 
