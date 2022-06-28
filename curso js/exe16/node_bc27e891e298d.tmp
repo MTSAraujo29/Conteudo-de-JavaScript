@@ -13,8 +13,15 @@
     while ler como ENQUANTO 
 */
 
-var c = 2
+var c = 1
 while (c <= 10) {
-    console.log('Tudo bem?')
-    
+    console.log(`Passo ${c}`)
+    c++
 }
+
+
+var m = 1
+do {
+    console.log(' Oi Matheus')
+    c++
+} while (m <= 21)
